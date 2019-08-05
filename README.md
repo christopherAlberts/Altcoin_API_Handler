@@ -17,22 +17,22 @@ The second being the specific info one is looking for. Please note that the valu
 Also note the variables are case sensitive. Meaning all the coins are written in capital letters and the second variables all start with a uppercase letter.  
 
 for example...
+'''
+altcoin_handler("BTC", "Price")
+BTC: Price: 180501.0
 
->>>altcoin_handler("BTC", "Price")
->>>BTC: Price: 180501.0
+altcoin_handler("XRP", "High")
+XRP: High: 5.0
 
->>>altcoin_handler("XRP", "High")
->>>XRP: High: 5.0
-
->>>altcoin_handler("DOGE","Volume")
->>>DOGE: Volume: 1838818.1
+altcoin_handler("DOGE","Volume")
+DOGE: Volume: 1838818.1 '''
 
 The second variable(x2) is not compulsory. If no second variable is given, the method will output all the data for the coin/currency in question. 
 
 for example...
 
->>>altcoin_handler("BTC")
->>>BTC: 
+altcoin_handler("BTC")
+BTC: 
         Price: 180501.00
         Sell: 182481.00
         Buy: 180350.00
