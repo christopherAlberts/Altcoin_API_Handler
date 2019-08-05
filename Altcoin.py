@@ -59,5 +59,4 @@ def altcoin_handler(x1,x2=None):
         return "Error: the first variable does not match any of the pre programed variables"
 
 
-altcoin_handler("all")
 
