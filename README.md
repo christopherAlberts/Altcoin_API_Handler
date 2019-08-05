@@ -3,6 +3,7 @@
 This code allows one to get specific data from the Altcoin Trader API.
 
 Altcoin Traders Webpage: *https://www.altcointrader.co.za/*
+
 Altcoind Trader API:  *https://www.altcointrader.co.za/api/#/Checks/liveStats*
 
 The Altcoin Trader API basically just allows you to get all the data for all the coins, in one shot. 
@@ -17,6 +18,7 @@ The second being the specific info one is looking for. Please note that the valu
 Also note the variables are case sensitive. Meaning all the coins are written in capital letters and the second variables all start with a uppercase letter.  
 
 for example...
+
 ```
 altcoin_handler("BTC", "Price")
 BTC: Price: 180501.0
@@ -32,6 +34,7 @@ The second variable(x2) is not compulsory. If no second variable is given, the m
 
 for example...
 
+```
 altcoin_handler("BTC")
 BTC: 
         Price: 180501.00
@@ -49,11 +52,13 @@ BTC:
         High: 3680.00
         Low: 3303.91
         Volume: 317.59
+ ```
         
 One can also give the argument of "all" to get the output of all the coin currently listed on Altcoin Trader.  
 
 for example...
-  
+
+```
 >>>altcoin_handler("all")
 >>>BTC: 
         Price: 180030.00
@@ -238,4 +243,4 @@ for example...
         High: 450.00
         Low: 380.00
         Volume: 713.87
-    
+ ```   
