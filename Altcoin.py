@@ -6,7 +6,7 @@ def altcoin_handler(x1,x2=None):
 
     response = requests.get('https://api.altcointrader.co.za/v3/live-stats')
     full_response = response.text
-    global full_response3
+    
     if x1 in full_response or x1 == "all":
 
         # Cleaning up the output...
@@ -20,6 +20,7 @@ def altcoin_handler(x1,x2=None):
 
         full_response3 = full_response2.replace("}", "", n)
         # full_response3 is the final clean version of all the data.
+        
         if x1 == "all":
             print(full_response3)
             return full_response3  # full_response3 is the final clean version of all the data.
