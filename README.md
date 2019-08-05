@@ -17,7 +17,7 @@ The altcoin_handler method takes two arguments. The first being the coin/currenc
 The second being the specific info one is looking for. Please note that the values are displayed in South-African Rand. 
 Also note the variables are case sensitive. Meaning all the coins are written in capital letters and the second variables all start with a uppercase letter.  
 
-for example...
+*for example...*
 
 ```
 >>>altcoin_handler("BTC", "Price")
@@ -32,7 +32,7 @@ for example...
 
 The second variable(x2) is not compulsory. If no second variable is given, the method will output all the data for the coin/currency in question. 
 
-for example...
+*for example...*
 
 ```
 >>>altcoin_handler("BTC")
@@ -56,7 +56,7 @@ for example...
         
 One can also give the argument of "all" to get the output of all the coin currently listed on Altcoin Trader.  
 
-for example...
+*for example...*
 
 ```
 >>>altcoin_handler("all")
