@@ -11,7 +11,7 @@ This Handler will allow you to get specific data.
 
 ## It works as follows:
 
-**altcoin_handler(x1,x2=None):**
+**altcoin_handler(x1, x2=None):**
 
 The altcoin_handler method takes two arguments. The first being the coin/currency that one wants to gather info about. 
 The second being the specific info one is looking for. Please note that the values are displayed in South-African Rand. 
