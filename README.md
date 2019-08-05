@@ -20,14 +20,14 @@ Also note the variables are case sensitive. Meaning all the coins are written in
 for example...
 
 ```
-altcoin_handler("BTC", "Price")
-BTC: Price: 180501.0
+>>>altcoin_handler("BTC", "Price")
+>>>BTC: Price: 180501.0
 
-altcoin_handler("XRP", "High")
-XRP: High: 5.0
+>>>altcoin_handler("XRP", "High")
+>>>XRP: High: 5.0
 
-altcoin_handler("DOGE","Volume")
-DOGE: Volume: 1838818.1
+>>>altcoin_handler("DOGE","Volume")
+>>>DOGE: Volume: 1838818.1
 ```
 
 The second variable(x2) is not compulsory. If no second variable is given, the method will output all the data for the coin/currency in question. 
@@ -35,8 +35,8 @@ The second variable(x2) is not compulsory. If no second variable is given, the m
 for example...
 
 ```
-altcoin_handler("BTC")
-BTC: 
+>>>altcoin_handler("BTC")
+>>>BTC: 
         Price: 180501.00
         Sell: 182481.00
         Buy: 180350.00
