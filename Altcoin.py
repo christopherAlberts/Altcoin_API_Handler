@@ -60,4 +60,18 @@ def altcoin_handler(x1,x2=None):
         return "Error: the first variable does not match any of the pre programed variables"
 
 
+    
+###############################################################################################
+UPDATED!!!!!!!!!!!!!!!!!!!!!!!
+###############################################################################################
+
+def altcoin_handler(crypto, info):
+    response = requests.get('https://api.altcointrader.co.za/v3/live-stats')
+    full_response = response.json()
+    print(full_response[crypto][info])
+    return full_response[crypto][info]
+
+
+altcoin_handler('BTC', 'Price')
+
 
