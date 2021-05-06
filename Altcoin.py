@@ -71,7 +71,19 @@ def altcoin_handler(crypto, info):
     print(full_response[crypto][info])
     return full_response[crypto][info]
 
-
 altcoin_handler('BTC', 'Price')
 
+
+
+def altcoin_handler_config():
+        response = requests.get('https://api.altcointrader.co.za/v3/live-stats')
+        full_response = response.json()
+        num_of_currency = len(full_response)
+        num_of_info = len(full_response[next(iter((full_response.items())))[0]])
+
+        config = {'num_of_currency': num_of_currency, 'num_of_info': num_of_info}
+        # print(config)
+        return config
+
+altcoin_handler_config()
 
